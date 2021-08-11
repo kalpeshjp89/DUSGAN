@@ -1,11 +1,30 @@
-To test/reproduce results, change "option/test/test_ntireEx.json" file in which you need to change path for dataset and pre-trained model of SR network.
-(You can find pre-trained network in the main folder with 297000_G.pth file)
+# Direct Unsupervised Super-Resolution using Generative Adversarial Network (DUS-GAN) for Real-World Data
 
-Then you need run following command.
-python test.py -opt option/test/test_ntire2.json
+The repository contains the official code for the work **"Direct Unsupervised Super-Resolution using Generative Adversarial Network (DUS-GAN) for Real-World Data"**.
 
+**- Pre-Trained models**
 
-Required Packages.
-pytorch 1.4
-opencv 3.4.2
-python-lmdb 0.96
+The pre-trained model for is shared with the repository..
+
+**- Training the model**
+
+To train from scratch, you need to set root directory and dataset directory into `options/train/train_ntireEx.json` file. Then run the following command to start the training.
+```javascript
+python train.py -opt PATH-to-json_file
+
+```
+
+**- Testng the model**
+
+To test your/our pre-trained model, you need to set root directory and dataset directory into `options/test/test_ntire_ex.json` file. Then run the following command to start the training.
+```javascript
+python test.py -opt PATH-to-json_file
+
+```
+
+**- Requirement of packages**
+
+The list of packages required to run the code is given in `chasnet.yml` file.
+
+We are thankful to Xinntao for their ESRGAN code using which this work has been implemented.
+For any problem, you may contact at <kalpesh.jp89@gmail.com>.
