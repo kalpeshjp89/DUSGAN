@@ -8,11 +8,7 @@ The pre-trained model for is shared with the repository..
 
 **- Training the model**
 
-To train from scratch, you need to set root directory and dataset directory into `options/train/train_ntireEx.json` file. Then run the following command to start the training.
-```javascript
-python train.py -opt PATH-to-json_file
-
-```
+Training code will be published ASAP!
 
 **- Testng the model**
 
