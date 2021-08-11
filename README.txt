@@ -1,4 +1,6 @@
-To test/reproduce results, change "option/test/test_ntire2.json" file in which you need to change path for dataset and pre-trained model of G1 network.
+To test/reproduce results, change "option/test/test_ntireEx.json" file in which you need to change path for dataset and pre-trained model of SR network.
+(You can find pre-trained network in the main folder with 297000_G.pth file)
+
 Then you need run following command.
 python test.py -opt option/test/test_ntire2.json
 
