@@ -1,6 +1,6 @@
 // Not total the same as SRGAN in <Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network>
 {
-  "name": "DUSGAN" //  please remove "debug_" during training
+  "name": "ESRGAN_LS_TwoPatchDisc_9x9GaussFilter_ExpQA" //  please remove "debug_" during training
   , "use_tb_logger": true
   , "model":"ntire_ex"
   , "scale": 4
@@ -10,8 +10,8 @@
     "train": {
       "name": "NTIRE"
       , "mode": "LRHR"
-      , "dataroot_HR": "/media/kalpesh/Data/Kalpesh/NTIRE20/HR"
-      , "dataroot_LR": "/media/kalpesh/Data/Kalpesh/NTIRE20/LR"
+      , "dataroot_HR": "/home/user1/Documents/Kalpesh/NTIRE2_Code/NTIRE_Data/HR"
+      , "dataroot_LR": "/home/user1/Documents/Kalpesh/NTIRE2_Code/NTIRE_Data/LR"
       , "subset_file": null
       , "use_shuffle": true
       , "n_workers": 8
@@ -23,24 +23,23 @@
     , "val": {
       "name": "val_NTIRE"
       , "mode": "LRHR"
-      , "dataroot_HR": "/media/kalpesh/Data/Kalpesh/NTIRE20/valY"
-      , "dataroot_LR": "/media/kalpesh/Data/Kalpesh/NTIRE20/valX"
+      , "dataroot_HR": "/home/user1/Documents/Validation_HR/A"
+      , "dataroot_LR": "/home/user1/Documents/Validation_LR/A"
     }
   }
 
   , "path": {
-    "root": "/media/kalpesh/Data/Kalpesh/NTIRE-Extension/NTIRE Extension Code/"
+    "root": "/home/user1/Documents/Kalpesh/NTIRE2_Code/"
     //, "resume_state": "/home/user1/Documents/Kalpesh/NTIRE2_Code/experiments/LSGAN_TwoPatchDisc_ExpQA/training_state/181000.state"
     , "pretrain_model_G": null
-    , "pretrain_model_Q": "/media/kalpesh/Data/Kalpesh/NTIRE-Extension/NTIRE Extension Code/latest_G.pth"
   }
 
   , "network_G": {
     "which_model_G": "SRGAN_Gen" // RRDB_net | sr_resnet | SRGANGen
     , "norm_type": null
     , "mode": "CNA"
-    , "nf": 64
-    , "nb": 20
+    , "nf": 32
+    , "nb": 23
     , "in_nc": 3
     , "out_nc": 3
   }
@@ -73,7 +72,7 @@
     , "QA_weight": 1e-3
 
     , "manual_seed": 0
-    , "niter": 400000
+    , "niter": 70000
     , "val_freq": 1000
   }
 
