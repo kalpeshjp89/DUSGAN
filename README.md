@@ -8,7 +8,13 @@ The pre-trained model for is shared with the repository..
 
 **- Training the model**
 
-Training code will be published ASAP!
+Training code has been released. To train the network, run the following command.
+```javascript
+python train.py -opt path_for_training_json_file
+```
+Note the following changes are needed to run the code.
+- Need to provide pre-train QA network path at line number 307 for model/DS_Model.py file.
+- Change the root folder and training dataset path into train_ntireEx.json file located at options/train folder.
 
 **- Testng the model**
 
