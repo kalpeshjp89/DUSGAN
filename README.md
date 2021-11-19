@@ -1,6 +1,6 @@
 # Direct Unsupervised Super-Resolution using Generative Adversarial Network (DUS-GAN) for Real-World Data
 
-The repository contains the official code for the work **"Direct Unsupervised Super-Resolution using Generative Adversarial Network (DUS-GAN) for Real-World Data"**.
+The repository contains the official code for the work **"Direct Unsupervised Super-Resolution using Generative Adversarial Network (DUS-GAN) for Real-World Data"** published in an IEEE Transaction in Image Processing (TIP).
 
 **- Pre-Trained models**
 
